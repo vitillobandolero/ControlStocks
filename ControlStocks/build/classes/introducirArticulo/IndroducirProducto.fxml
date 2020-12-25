@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="introducir" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="introducirArticulo.IndroducirProductoController">
+   <children>
+  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txtID" layoutX="188.0" layoutY="40.0" prefWidth="100.0" />
+            <TextField fx:id="txtNombre" layoutX="188.0" layoutY="91.0" prefWidth="100.0" />
+            <TextField fx:id="txtCantidad" layoutX="188.0" layoutY="158.0" prefWidth="100.0" />
+            <TextArea fx:id="txtDescripcion" layoutX="188.0" layoutY="217.0" prefHeight="103.0" prefWidth="290.0" />
+            <Label layoutX="88.0" layoutY="46.0" text="ID" />
+            <Label layoutX="65.0" layoutY="103.0" text="Nombre" />
+            <Label layoutX="62.0" layoutY="164.0" text="Cantidad" />
+            <Label layoutX="51.0" layoutY="217.0" text="Descripción" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

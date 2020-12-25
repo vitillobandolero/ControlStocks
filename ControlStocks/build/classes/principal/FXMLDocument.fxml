@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.input.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.FXMLDocumentController">
+   <children>
+      <Pane layoutY="39.0" prefHeight="481.0" prefWidth="300.0">
+         <children>
+            <TextArea fx:id="txtArea" prefHeight="481.0" prefWidth="300.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="300.0" layoutY="40.0" prefHeight="400.0" prefWidth="500.0">
+          <children>
+            <fx:include fx:id="introducir" source="../introducirArticulo/IndroducirProducto.fxml" />
+            <Button layoutX="357.0" layoutY="57.0" mnemonicParsing="false" onAction="#actualizar" text="Actualizar" />
+            <Button layoutX="357.0" layoutY="126.0" mnemonicParsing="false" onAction="#listado" text="Button" />
+         </children>
+      </Pane>
+      <HBox layoutX="324.0" layoutY="458.0" prefHeight="62.0" prefWidth="476.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+            <Button mnemonicParsing="false" onAction="#inventario" text="Inventario" />
+            <Button mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+            <Button mnemonicParsing="false" onAction="#borrar" text="Borrar" />
+            <Button mnemonicParsing="false" onAction="#salir" text="Salir" />
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+      <MenuBar prefHeight="39.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="_Informes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Listado de productos">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Grafico sectores">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Gráfico de barras">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="B" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="A_yuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
